@@ -1,54 +1,121 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eden Project</title>
-    <link rel="stylesheet" href="CSS/style.css" />
+  <meta charset="UTF-8">
+  <title>캐릭터 갤러리</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- 배너 -->
-    <div id="top">
-        <div>
-            <p>Title</p>
-        </div>
+  <!-- 캐릭터 프로필 영역 -->
+  <div class="profile-gallery">
+    <h1>캐릭터 선택</h1>
+    <div class="profiles">
+      <img src="char1_profile.jpg" alt="캐릭터 1" data-modal="char1-modal">
+      <img src="char2_profile.jpg" alt="캐릭터 2" data-modal="char2-modal">
+      <img src="char3_profile.jpg" alt="캐릭터 3" data-modal="char3-modal">
+      <img src="char4_profile.jpg" alt="캐릭터 4" data-modal="char4-modal">
+      <img src="char5_profile.jpg" alt="캐릭터 5" data-modal="char5-modal">
     </div>
-    <!-- 메뉴 버튼 -->
-    <div id="nav">
-        <ul>
-            <li><a class="active" href="index.html">Present</a></li>
-            <li><a href="page/past.html">Past</a></li>
-            <li><a href="page/future.html">Future</a></li>
-        </ul>
-    </div>
+  </div>
 
-    <div id="profile">
-        <div id="ui" class="profile-box">
-            <a><img src="https://i.namu.wiki/i/HVvlHSwLC7gp_KO28XyXiIqhyhvdz37dwNg5j5zMZWaP0-VWJ0bmv7sjcm-ZmB-x_TGvq66009WaK5DDFwGPqxMJkoVepWeErbl1F-_GPOkIYmOqpv-YnShLDOQ1zfOBGc1sY48Voir0V-_q6ZbcDA.webp" alt="ui"></a>
-        </div>
-        <div id="antonio" class="profile-box">
-            <a><img src="https://i.namu.wiki/i/HVvlHSwLC7gp_KO28XyXiIqhyhvdz37dwNg5j5zMZWaP0-VWJ0bmv7sjcm-ZmB-x_TGvq66009WaK5DDFwGPqxMJkoVepWeErbl1F-_GPOkIYmOqpv-YnShLDOQ1zfOBGc1sY48Voir0V-_q6ZbcDA.webp" alt="antonio"></a>
-        </div>
-        <div id="ulloa" class="profile-box">
-            <a><img src="https://i.namu.wiki/i/HVvlHSwLC7gp_KO28XyXiIqhyhvdz37dwNg5j5zMZWaP0-VWJ0bmv7sjcm-ZmB-x_TGvq66009WaK5DDFwGPqxMJkoVepWeErbl1F-_GPOkIYmOqpv-YnShLDOQ1zfOBGc1sY48Voir0V-_q6ZbcDA.webp" alt="ulloa"></a>
-        </div>
-        <div id="eva" class="profile-box">
-            <a><img src="https://i.namu.wiki/i/HVvlHSwLC7gp_KO28XyXiIqhyhvdz37dwNg5j5zMZWaP0-VWJ0bmv7sjcm-ZmB-x_TGvq66009WaK5DDFwGPqxMJkoVepWeErbl1F-_GPOkIYmOqpv-YnShLDOQ1zfOBGc1sY48Voir0V-_q6ZbcDA.webp" alt="eva"></a>
-        </div>
-        <div id="eve" class="profile-box">
-            <a><img src="https://i.namu.wiki/i/HVvlHSwLC7gp_KO28XyXiIqhyhvdz37dwNg5j5zMZWaP0-VWJ0bmv7sjcm-ZmB-x_TGvq66009WaK5DDFwGPqxMJkoVepWeErbl1F-_GPOkIYmOqpv-YnShLDOQ1zfOBGc1sY48Voir0V-_q6ZbcDA.webp" alt="eve"></a>
-        </div>
+  <!-- 캐릭터 1 갤러리 모달 -->
+  <div id="char1-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>캐릭터 1 갤러리</h2>
+      <div class="gallery">
+        <img src="char1_img1.jpg" alt="캐릭터 1 이미지 1">
+        <img src="char1_img2.jpg" alt="캐릭터 1 이미지 2">
+        <img src="char1_img3.jpg" alt="캐릭터 1 이미지 3">
+      </div>
     </div>
-    <!-- 본문 -->
-    <div id="content">
+  </div>
 
+  <!-- 캐릭터 2 갤러리 모달 -->
+  <div id="char2-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>캐릭터 2 갤러리</h2>
+      <div class="gallery">
+        <img src="char2_img1.jpg" alt="캐릭터 2 이미지 1">
+        <img src="char2_img2.jpg" alt="캐릭터 2 이미지 2">
+        <img src="char2_img3.jpg" alt="캐릭터 2 이미지 3">
+      </div>
     </div>
+  </div>
 
-    <div id="bottom">
-        <div>
-
-        </div>
+  <!-- 캐릭터 3 갤러리 모달 -->
+  <div id="char3-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>캐릭터 3 갤러리</h2>
+      <div class="gallery">
+        <img src="char3_img1.jpg" alt="캐릭터 3 이미지 1">
+        <img src="char3_img2.jpg" alt="캐릭터 3 이미지 2">
+        <img src="char3_img3.jpg" alt="캐릭터 3 이미지 3">
+      </div>
     </div>
-    
+  </div>
+
+  <!-- 캐릭터 4 갤러리 모달 -->
+  <div id="char4-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>캐릭터 4 갤러리</h2>
+      <div class="gallery">
+        <img src="char4_img1.jpg" alt="캐릭터 4 이미지 1">
+        <img src="char4_img2.jpg" alt="캐릭터 4 이미지 2">
+        <img src="char4_img3.jpg" alt="캐릭터 4 이미지 3">
+      </div>
+    </div>
+  </div>
+
+  <!-- 캐릭터 5 갤러리 모달 -->
+  <div id="char5-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>캐릭터 5 갤러리</h2>
+      <div class="gallery">
+        <img src="char5_img1.jpg" alt="캐릭터 5 이미지 1">
+        <img src="char5_img2.jpg" alt="캐릭터 5 이미지 2">
+        <img src="char5_img3.jpg" alt="캐릭터 5 이미지 3">
+      </div>
+    </div>
+  </div>
+
+  <!-- 자바스크립트 코드 (HTML 아래에 분리) -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      // 프로필 이미지 클릭 시 해당 모달 열기
+      const profiles = document.querySelectorAll(".profiles img");
+      profiles.forEach(function(profile) {
+        profile.addEventListener("click", function() {
+          const modalId = this.getAttribute("data-modal");
+          const modal = document.getElementById(modalId);
+          if (modal) {
+            modal.style.display = "flex";
+          }
+        });
+      });
+
+      // 모달 내 닫기 버튼 클릭 시 모달 닫기
+      const closeButtons = document.querySelectorAll(".modal .close");
+      closeButtons.forEach(function(btn) {
+        btn.addEventListener("click", function() {
+          this.closest(".modal").style.display = "none";
+        });
+      });
+
+      // 모달 외부 영역 클릭 시 모달 닫기
+      const modals = document.querySelectorAll(".modal");
+      modals.forEach(function(modal) {
+        modal.addEventListener("click", function(e) {
+          if (e.target === modal) {
+            modal.style.display = "none";
+          }
+        });
+      });
+    });
+  </script>
 </body>
 </html>
